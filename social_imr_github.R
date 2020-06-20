@@ -1,6 +1,6 @@
 #################
 # Social expenditures and IMR
-# Citation: Goldstein ND, Palumbo AJ, Bellamy S, Purtle J, Locke R. Association between state and local government expenditures and infant mortality: disparities by race, ethnicity, and maternal age. Manuscript in preparation.
+# Citation: Goldstein ND, Palumbo AJ, Bellamy S, Purtle J, Locke R. Association between state and local government expenditures and infant mortality in the U.S. Manuscript in preparation.
 # 6/15/18 -- Neal Goldstein
 #################
 
@@ -57,6 +57,14 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_overall[,c("Region","X2011")]
     } else if (year==2012) {
       returndata = IMR_overall[,c("Region","X2012")]
+    } else if (year==2013) {
+      returndata = IMR_overall[,c("Region","X2013")]
+    } else if (year==2014) {
+      returndata = IMR_overall[,c("Region","X2014")]
+    } else if (year==2015) {
+      returndata = IMR_overall[,c("Region","X2015")]
+    } else if (year==2016) {
+      returndata = IMR_overall[,c("Region","X2016")]
     } 
     
   } else if (data=="IMR_Hispanic") {
@@ -87,6 +95,14 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_raceeth_11[,c("Region","Hispanic")]
     } else if (year==2012) {
       returndata = IMR_raceeth_12[,c("Region","Hispanic")]
+    } else if (year==2013) {
+      returndata = IMR_raceeth_13[,c("Region","Hispanic")]
+    } else if (year==2014) {
+      returndata = IMR_raceeth_14[,c("Region","Hispanic")]
+    } else if (year==2015) {
+      returndata = IMR_raceeth_15[,c("Region","Hispanic")]
+    } else if (year==2016) {
+      returndata = IMR_raceeth_16[,c("Region","Hispanic")]
     } 
     
     
@@ -118,6 +134,14 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_raceeth_11[,c("Region","White")]
     } else if (year==2012) {
       returndata = IMR_raceeth_12[,c("Region","White")]
+    } else if (year==2013) {
+      returndata = IMR_raceeth_13[,c("Region","White")]
+    } else if (year==2014) {
+      returndata = IMR_raceeth_14[,c("Region","White")]
+    } else if (year==2015) {
+      returndata = IMR_raceeth_15[,c("Region","White")]
+    } else if (year==2016) {
+      returndata = IMR_raceeth_16[,c("Region","White")]
     } 
     
   } else if (data=="IMR_Black") {
@@ -148,10 +172,18 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_raceeth_11[,c("Region","Black")]
     } else if (year==2012) {
       returndata = IMR_raceeth_12[,c("Region","Black")]
+    } else if (year==2013) {
+      returndata = IMR_raceeth_13[,c("Region","Black")]
+    } else if (year==2014) {
+      returndata = IMR_raceeth_14[,c("Region","Black")]
+    } else if (year==2015) {
+      returndata = IMR_raceeth_15[,c("Region","Black")]
+    } else if (year==2016) {
+      returndata = IMR_raceeth_16[,c("Region","Black")]
     } 
-  
+    
   } else if (data=="IMR_Native") {
-
+    
     if (year==2000) {
       returndata = IMR_raceeth_00[,c("Region","American.Indian.Alaska.Native")]
     } else if (year==2001) {
@@ -178,6 +210,14 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_raceeth_11[,c("Region","American.Indian.Alaska.Native")]
     } else if (year==2012) {
       returndata = IMR_raceeth_12[,c("Region","American.Indian.Alaska.Native")]
+    } else if (year==2013) {
+      returndata = IMR_raceeth_13[,c("Region","American.Indian.Alaska.Native")]
+    } else if (year==2014) {
+      returndata = IMR_raceeth_14[,c("Region","American.Indian.Alaska.Native")]
+    } else if (year==2015) {
+      returndata = IMR_raceeth_15[,c("Region","American.Indian.Alaska.Native")]
+    } else if (year==2016) {
+      returndata = IMR_raceeth_16[,c("Region","American.Indian.Alaska.Native")]
     } 
     
   } else if (data=="IMR_Asian") {
@@ -208,8 +248,16 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_raceeth_11[,c("Region","Asian..Pacific.Islander")]
     } else if (year==2012) {
       returndata = IMR_raceeth_12[,c("Region","Asian..Pacific.Islander")]
+    } else if (year==2013) {
+      returndata = IMR_raceeth_13[,c("Region","Asian..Pacific.Islander")]
+    } else if (year==2014) {
+      returndata = IMR_raceeth_14[,c("Region","Asian..Pacific.Islander")]
+    } else if (year==2015) {
+      returndata = IMR_raceeth_15[,c("Region","Asian..Pacific.Islander")]
+    } else if (year==2016) {
+      returndata = IMR_raceeth_16[,c("Region","Asian..Pacific.Islander")]
     } 
-
+    
   } else if (data=="IMR_20") {
     
     if (year==2000) {
@@ -238,8 +286,16 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_matage_11[,c("Region","X.20")]
     } else if (year==2012) {
       returndata = IMR_matage_12[,c("Region","X.20")]
+    } else if (year==2013) {
+      returndata = IMR_matage_13[,c("Region","X.20")]
+    } else if (year==2014) {
+      returndata = IMR_matage_14[,c("Region","X.20")]
+    } else if (year==2015) {
+      returndata = IMR_matage_15[,c("Region","X.20")]
+    } else if (year==2016) {
+      returndata = IMR_matage_16[,c("Region","X.20")]
     } 
-
+    
   } else if (data=="IMR_20_29") {
     
     if (year==2000) {
@@ -268,6 +324,14 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_matage_11[,c("Region","X20.29")]
     } else if (year==2012) {
       returndata = IMR_matage_12[,c("Region","X20.29")]
+    } else if (year==2013) {
+      returndata = IMR_matage_13[,c("Region","X20.29")]
+    } else if (year==2014) {
+      returndata = IMR_matage_14[,c("Region","X20.29")]
+    } else if (year==2015) {
+      returndata = IMR_matage_15[,c("Region","X20.29")]
+    } else if (year==2016) {
+      returndata = IMR_matage_16[,c("Region","X20.29")]
     } 
     
   } else if (data=="IMR_30_39") {
@@ -298,6 +362,14 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_matage_11[,c("Region","X30.39")]
     } else if (year==2012) {
       returndata = IMR_matage_12[,c("Region","X30.39")]
+    } else if (year==2013) {
+      returndata = IMR_matage_13[,c("Region","X30.39")]
+    } else if (year==2014) {
+      returndata = IMR_matage_14[,c("Region","X30.39")]
+    } else if (year==2015) {
+      returndata = IMR_matage_15[,c("Region","X30.39")]
+    } else if (year==2016) {
+      returndata = IMR_matage_16[,c("Region","X30.39")]
     } 
     
   } else if (data=="IMR_40") {
@@ -328,6 +400,14 @@ external_data = function(data=NA, year=NA) {
       returndata = IMR_matage_11[,c("Region","X..40")]
     } else if (year==2012) {
       returndata = IMR_matage_12[,c("Region","X..40")]
+    } else if (year==2013) {
+      returndata = IMR_matage_13[,c("Region","X..40")]
+    } else if (year==2014) {
+      returndata = IMR_matage_14[,c("Region","X..40")]
+    } else if (year==2015) {
+      returndata = IMR_matage_15[,c("Region","X..40")]
+    } else if (year==2016) {
+      returndata = IMR_matage_16[,c("Region","X..40")]
     } 
     
   } else if (data=="Expenditure_overall") {
@@ -364,6 +444,12 @@ external_data = function(data=NA, year=NA) {
       colnames(returndata) = letters[1:ncol(returndata)]
     } else if (year==2012) {
       returndata = data.frame(t(Expenditure_12[c(8,75), ]), stringsAsFactors=F)
+      colnames(returndata) = letters[1:ncol(returndata)]
+    } else if (year==2013) {
+      returndata = data.frame(t(Expenditure_13[c(10,77), ]), stringsAsFactors=F)
+      colnames(returndata) = letters[1:ncol(returndata)]
+    } else if (year==2014) {
+      returndata = data.frame(t(Expenditure_14[c(10,77), ]), stringsAsFactors=F)
       colnames(returndata) = letters[1:ncol(returndata)]
     } 
     
@@ -402,6 +488,12 @@ external_data = function(data=NA, year=NA) {
     } else if (year==2012) {
       returndata = data.frame(t(Expenditure_12[c(8,95,102), ]), stringsAsFactors=F)
       colnames(returndata) = letters[1:ncol(returndata)]
+    } else if (year==2013) {
+      returndata = data.frame(t(Expenditure_13[c(10,97,104), ]), stringsAsFactors=F)
+      colnames(returndata) = letters[1:ncol(returndata)]
+    } else if (year==2014) {
+      returndata = data.frame(t(Expenditure_14[c(10,97,104), ]), stringsAsFactors=F)
+      colnames(returndata) = letters[1:ncol(returndata)]
     } 
     
   } else if (data=="Expenditure_social") {
@@ -438,6 +530,12 @@ external_data = function(data=NA, year=NA) {
       colnames(returndata) = letters[1:ncol(returndata)]
     } else if (year==2012) {
       returndata = data.frame(t(Expenditure_12[c(8,105,109,111:113), ]), stringsAsFactors=F)
+      colnames(returndata) = letters[1:ncol(returndata)]
+    } else if (year==2013) {
+      returndata = data.frame(t(Expenditure_13[c(10,107,111,113:115), ]), stringsAsFactors=F)
+      colnames(returndata) = letters[1:ncol(returndata)]
+    } else if (year==2014) {
+      returndata = data.frame(t(Expenditure_14[c(10,107,111,113:115), ]), stringsAsFactors=F)
       colnames(returndata) = letters[1:ncol(returndata)]
     } 
     
@@ -476,6 +574,12 @@ external_data = function(data=NA, year=NA) {
     } else if (year==2012) {
       returndata = data.frame(t(Expenditure_12[c(8,130,132,134,135,137), ]), stringsAsFactors=F)
       colnames(returndata) = letters[1:ncol(returndata)]
+    } else if (year==2013) {
+      returndata = data.frame(t(Expenditure_13[c(10,132,134,136,137,139), ]), stringsAsFactors=F)
+      colnames(returndata) = letters[1:ncol(returndata)]
+    } else if (year==2014) {
+      returndata = data.frame(t(Expenditure_14[c(10,132,134,136,137,139), ]), stringsAsFactors=F)
+      colnames(returndata) = letters[1:ncol(returndata)]
     } 
     
   }
@@ -486,71 +590,89 @@ external_data = function(data=NA, year=NA) {
 
 ### READ DATA ###
 
-#IMR, March of Dimes PeriStats
-#https://www.marchofdimes.org/peristats/Peristats.aspx
-#Select Location > US, Topic > IMR, Format > Bar graph/View table
-#Then on results, select Compare With > All States, Years > All years available
-IMR_overall = read.csv("Raw Data/IMR overall/imr_US_1990_2013_map_91_r204.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_00 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_1999-2001 Average_map_92_r289.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_01 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2000-2002 Average_map_92_r210.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_02 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2001-2003 Average_map_92_r206.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_03 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2002-2004 Average_map_92_r991.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_04 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2003-2005 Average_map_92_r445.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_05 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2004-2006 Average_map_92_r792.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_06 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2005-2007 Average_map_92_r656.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_07 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2006-2008 Average_map_92_r776.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_08 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2007-2009 Average_map_92_r722.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_09 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2008-2010 Average_map_92_r625.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_10 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2009-2011 Average_map_92_r931.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_11 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2010-2012 Average_map_92_r637.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_raceeth_12 = read.csv("Raw Data/IMR by Race Ethnicity/imr_raceeth_US_2011-2013 Average_map_92_r359.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_00 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_1999-2001 Average_map_93_r639.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_01 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2000-2002 Average_map_93_r325.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_02 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2001-2003 Average_map_93_r871.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_03 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2002-2004 Average_map_93_r427.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_04 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2003-2005 Average_map_93_r364.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_05 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2004-2006 Average_map_93_r757.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_06 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2005-2007 Average_map_93_r281.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_07 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2006-2008 Average_map_93_r903.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_08 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2007-2009 Average_map_93_r500.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_09 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2008-2010 Average_map_93_r976.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_10 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2009-2011 Average_map_93_r617.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_11 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2010-2012 Average_map_93_r749.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
-IMR_matage_12 = read.csv("Raw Data/IMR by Maternal Age/imr_matage_US_2011-2013 Average_map_93_r761.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+#2000-12 IMR from March of Dimes PeriStats (via NCHS)
+# https://www.marchofdimes.org/peristats/Peristats.aspx
+# Select Location > US, Topic > IMR, Format > Bar graph/View table
+# Then on results, select Compare With > All States, Years > All years available
+#2013-17 IMR from CDC Wonder (via NCHS)
+# https://wonder.cdc.gov
+# Select Infant Deaths (Linked Birth/Infant Death Records) > Linked Birth / Infant Death Records for 2007-2017 with ICD 10 codes
+# Group results by State, Additional Rates per 1,000, Year of Death to required year, Precision to 1 decimal
+# For maternal age and race/ethnicity, select three years of data for moving average and show suppressed values
+# Hispanic ethnicity: Mother's Bridged Race/Hispanic Origin: Mexican, Puerto Rican, Cuban, Central/South American, Other/Unknown Hispanic
+# Race: Mother's Bridged Race/Hispanic Origin: all Non-Hispanic options selected, Mother's Bridged Race: Select as appropriate
+# Age: Age of Mother: Select groupings as appropriate
+IMR_overall = read.csv("imr_us_1990_2017.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_00 = read.csv("imr_raceeth_US_1999-2001 Average_map_92_r289.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_01 = read.csv("imr_raceeth_US_2000-2002 Average_map_92_r210.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_02 = read.csv("imr_raceeth_US_2001-2003 Average_map_92_r206.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_03 = read.csv("imr_raceeth_US_2002-2004 Average_map_92_r991.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_04 = read.csv("imr_raceeth_US_2003-2005 Average_map_92_r445.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_05 = read.csv("imr_raceeth_US_2004-2006 Average_map_92_r792.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_06 = read.csv("imr_raceeth_US_2005-2007 Average_map_92_r656.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_07 = read.csv("imr_raceeth_US_2006-2008 Average_map_92_r776.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_08 = read.csv("imr_raceeth_US_2007-2009 Average_map_92_r722.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_09 = read.csv("imr_raceeth_US_2008-2010 Average_map_92_r625.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_10 = read.csv("imr_raceeth_US_2009-2011 Average_map_92_r931.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_11 = read.csv("imr_raceeth_US_2010-2012 Average_map_92_r637.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_12 = read.csv("imr_raceeth_US_2011-2013 Average_map_92_r359.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_13 = read.csv("imr_raceeth_US_2012-2014 Average.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_14 = read.csv("imr_raceeth_US_2013-2015 Average.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_15 = read.csv("imr_raceeth_US_2014-2016 Average.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_raceeth_16 = read.csv("imr_raceeth_US_2015-2017 Average.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_00 = read.csv("imr_matage_US_1999-2001 Average_map_93_r639.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_01 = read.csv("imr_matage_US_2000-2002 Average_map_93_r325.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_02 = read.csv("imr_matage_US_2001-2003 Average_map_93_r871.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_03 = read.csv("imr_matage_US_2002-2004 Average_map_93_r427.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_04 = read.csv("imr_matage_US_2003-2005 Average_map_93_r364.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_05 = read.csv("imr_matage_US_2004-2006 Average_map_93_r757.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_06 = read.csv("imr_matage_US_2005-2007 Average_map_93_r281.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_07 = read.csv("imr_matage_US_2006-2008 Average_map_93_r903.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_08 = read.csv("imr_matage_US_2007-2009 Average_map_93_r500.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_09 = read.csv("imr_matage_US_2008-2010 Average_map_93_r976.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_10 = read.csv("imr_matage_US_2009-2011 Average_map_93_r617.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_11 = read.csv("imr_matage_US_2010-2012 Average_map_93_r749.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_12 = read.csv("imr_matage_US_2011-2013 Average_map_93_r761.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_13 = read.csv("imr_matage_US_2012-2014 Average.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_14 = read.csv("imr_matage_US_2013-2015.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_15 = read.csv("imr_matage_US_2014-2016.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
+IMR_matage_16 = read.csv("imr_matage_US_2015-2017.csv", as.is=T, stringsAsFactors=F, na.strings=c("","n\a","n/a"))
 
 #expenditures
 #https://www.census.gov/govs/financegen/
 #https://www.census.gov/programs-surveys/gov-finances/data.html
 #https://www.census.gov/govs/financegen/historical_data.html
-Expenditure_00 = read.csv("Raw Data/Expenditures/00slss1.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_02 = read.csv("Raw Data/Expenditures/02slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_04 = read.csv("Raw Data/Expenditures/04slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_05 = read.csv("Raw Data/Expenditures/05slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_06 = read.csv("Raw Data/Expenditures/06slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_07 = read.csv("Raw Data/Expenditures/07slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_08 = read.csv("Raw Data/Expenditures/08slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_09 = read.csv("Raw Data/Expenditures/09slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_10 = read.csv("Raw Data/Expenditures/10slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_11 = read.csv("Raw Data/Expenditures/11slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
-Expenditure_12 = read.csv("Raw Data/Expenditures/12slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_00 = read.csv("00slss1.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_02 = read.csv("02slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_04 = read.csv("04slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_05 = read.csv("05slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_06 = read.csv("06slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_07 = read.csv("07slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_08 = read.csv("08slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_09 = read.csv("09slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_10 = read.csv("10slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_11 = read.csv("11slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_12 = read.csv("12slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_13 = read.csv("13slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
+Expenditure_14 = read.csv("14slsstab1a.csv", as.is=T, stringsAsFactors=F, header=F, na.strings=c("","-","(X)"))
 
 #census population data
-census_api_key("paste key here") #obtain key from: http://api.census.gov/data/key_signup.html
+census_api_key("paste api key here") #obtain key from: http://api.census.gov/data/key_signup.html
 Population_00 = get_decennial(geography="state", table="P001", year=2000)
 Population_10 = get_decennial(geography="state", table="P001", year=2010)
 
-#census poverty data; from table S1702 Poverty Status in the Past 12 Months of Families, 2006 American Community Survey
-poverty = read.csv("Raw Data/Poverty 2006 ACS.csv", na.strings="", stringsAsFactors=F, as.is=T)
+#census poverty data; from table S1702 Poverty Status in the Past 12 Months of Families (variable: S1702_C02_001E), 2010 American Community Survey 5-year estimates
+poverty = read.csv("Poverty 2010 ACS.csv", na.strings="", stringsAsFactors=F, as.is=T)
 
-#census gini index; from table B19083 Gini Index of Income Inequality, 2006 American Community Survey
-gini = read.csv("Raw Data/Gini 2006 ACS.csv", na.strings="", stringsAsFactors=F, as.is=T)
+#census gini index; from table B19083 Gini Index of Income Inequality (variable: B19083_001E), 2010 American Community Survey 5-year estimates
+gini = read.csv("Gini 2010 ACS.csv", na.strings="", stringsAsFactors=F, as.is=T)
 
 #governor's party; data from: https://www.nga.org/former-governors/
-gov_party = read.csv("Raw Data/State Governor Parties 2000-2012.csv", na.strings="", stringsAsFactors=F, as.is=T)
+gov_party = read.csv("State Governor Parties 2000-2017.csv", na.strings="", stringsAsFactors=F, as.is=T)
 
 #state legislature composition; data from: http://www.ncsl.org/research/about-state-legislatures/partisan-composition.aspx
 #note: Nebraska is based on de facto composition (majority of seats) since it is unicameral legislature
-leg_party = read.csv("Raw Data/State Legislature Composition Parties 2000-2012.csv", na.strings="", stringsAsFactors=F, as.is=T)
+leg_party = read.csv("State Legislature Composition Parties 2000-2017.csv", na.strings="", stringsAsFactors=F, as.is=T)
 
 
 ### CREATE LONG DATASET ###
@@ -561,7 +683,7 @@ state.name = c(state.name, 'District of Columbia')
 
 #vectors of states and years under study
 state_list = state.abb
-year_list = 2000:2012
+year_list = 2000:2016
 
 social_imr = data.frame("ID"=NA, "Year"=NA, "State"=NA, "Population"=NA, "IMR"=NA, "IMR_Hispanic"=NA, "IMR_White"=NA, "IMR_Black"=NA, "IMR_Native"=NA, "IMR_Asian"=NA, "IMR_20"=NA, "IMR_20_29"=NA, "IMR_30_39"=NA, "IMR_40"=NA, "Expenditure"=NA, "Expenditure_edu"=NA, "Expenditure_edu_education"=NA, "Expenditure_edu_libraries"=NA, "Expenditure_social"=NA, "Expenditure_social_health"=NA, "Expenditure_social_hospitals"=NA, "Expenditure_social_insurance"=NA, "Expenditure_social_veterans"=NA, "Expenditure_social_welfare"=NA, "Expenditure_env"=NA, "Expenditure_env_housing"=NA, "Expenditure_env_parks"=NA, "Expenditure_env_resources"=NA, "Expenditure_env_sewerage"=NA, "Expenditure_env_waste"=NA, stringsAsFactors=F)
 
@@ -569,9 +691,9 @@ vID = 0
 for (i in 1:length(year_list)) {
   
   for (j in 1:length(state_list)) {
-  
-    cat("\n\n************** ","Observation: ",i,", ", j," **************\n",sep="")
-  
+    
+    cat("\n\n************** ","Observation: ",year_list[i],", ", state_list[j]," **************\n",sep="")
+    
     vID = vID + 1
     vYear = year_list[i]
     vState = state_list[j]
@@ -654,15 +776,14 @@ rm(i,j)
 social_imr = social_imr[-1, ]
 
 #add president's party
-social_imr$President = ifelse(social_imr$Year==2000, "D", ifelse(social_imr$Year>=2001 & social_imr$Year<=2009, "R", "D"))
+social_imr$President = ifelse(social_imr$Year==2000, "D", ifelse(social_imr$Year>=2001 & social_imr$Year<=2008, "R", ifelse(social_imr$Year>=2017, "R", "D")))
 
 #add governor's party, legislature composition, gini index, and poverty rate
 social_imr$Governor = NA
 social_imr$Legislature = NA
 social_imr$Gini = NA
 social_imr$Poverty = NA
-for (i in 1:nrow(social_imr))
-{
+for (i in 1:nrow(social_imr)) {
   if (social_imr$State[i]!="DC") {
     
     #year is specified by column offset
@@ -678,6 +799,29 @@ for (i in 1:nrow(social_imr))
     social_imr$Gini[i] = gini$Gini[gini$State=="District of Columbia"]
     social_imr$Poverty[i] = poverty$Rate[poverty$State=="District of Columbia"]
     
+  }
+}
+rm(i)
+
+#impute expenditures for 2001 and 2003 using average(before+after)
+for (i in 1:nrow(social_imr)) {
+  if (social_imr$Year[i]==2001 | social_imr$Year[i]==2003) {
+    social_imr$Expenditure[i] = round((social_imr$Expenditure[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_edu[i] = round((social_imr$Expenditure_edu[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_edu[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_edu_education[i] = round((social_imr$Expenditure_edu_education[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_edu_education[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_edu_libraries[i] = round((social_imr$Expenditure_edu_libraries[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_edu_libraries[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_social[i] = round((social_imr$Expenditure_social[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_social[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_social_health[i] = round((social_imr$Expenditure_social_health[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_social_health[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_social_hospitals[i] = round((social_imr$Expenditure_social_hospitals[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_social_hospitals[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_social_insurance[i] = round((social_imr$Expenditure_social_insurance[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_social_insurance[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_social_veterans[i] = round((social_imr$Expenditure_social_veterans[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_social_veterans[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_social_welfare[i] = round((social_imr$Expenditure_social_welfare[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_social_welfare[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_env[i] = round((social_imr$Expenditure_env[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_env[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_env_housing[i] = round((social_imr$Expenditure_env_housing[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_env_housing[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_env_parks[i] = round((social_imr$Expenditure_env_parks[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_env_parks[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_env_resources[i] = round((social_imr$Expenditure_env_resources[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_env_resources[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_env_sewerage[i] = round((social_imr$Expenditure_env_sewerage[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_env_sewerage[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
+    social_imr$Expenditure_env_waste[i] = round((social_imr$Expenditure_env_waste[social_imr$Year==(social_imr$Year[i]-1) & social_imr$State==social_imr$State[i]] + social_imr$Expenditure_env_waste[social_imr$Year==(social_imr$Year[i]+1) & social_imr$State==social_imr$State[i]])/2)
   }
 }
 rm(i)
@@ -724,7 +868,7 @@ social_imr$Region = ifelse(social_imr$State=="CT" | social_imr$State=="ME" | soc
 
 #summary stats
 describe(social_imr$IMR)
-social_imr[which(social_imr$IMR==3.6), ]
+social_imr[which(social_imr$IMR==3.5), ]
 social_imr[which(social_imr$IMR==13.7), ]
 describe(social_imr$IMR_White)
 describe(social_imr$IMR_Black)
@@ -757,172 +901,167 @@ describe(social_imr$Expenditure_env_resources/social_imr$Population)
 describe(social_imr$Expenditure_env_sewerage/social_imr$Population)
 describe(social_imr$Expenditure_env_waste/social_imr$Population)
 
-#create lags for modeling
+#create lags for modeling (note IMR is 3-year average: year before/current/after, thus a 1-year lag is actually 2 years prior to the IMR midpoint)
 social_imr$IMR_lag1 = NA
 social_imr$IMR_lag2 = NA
 social_imr$IMR_lag3 = NA
-social_imr$IMR_lag4 = NA
-social_imr$IMR_lag5 = NA
 for (i in 1:nrow(social_imr)) {
-  if (social_imr$Year[i]<2012) {
-    social_imr$IMR_lag1[i] = social_imr$IMR[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
-    social_imr$IMR_Hispanic_lag1[i] = social_imr$IMR_Hispanic[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
-    social_imr$IMR_White_lag1[i] = social_imr$IMR_White[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
-    social_imr$IMR_Black_lag1[i] = social_imr$IMR_Black[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
-    social_imr$IMR_Asian_lag1[i] = social_imr$IMR_Asian[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
-    social_imr$IMR_20_lag1[i] = social_imr$IMR_20[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
-    social_imr$IMR_20_29_lag1[i] = social_imr$IMR_20_29[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
-    social_imr$IMR_30_39_lag1[i] = social_imr$IMR_30_39[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
-    social_imr$IMR_40_lag1[i] = social_imr$IMR_40[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+1))]
+  if (social_imr$Year[i]<2015) {
+    #e.g. expenditures in year 2000 lag to IMR 2001-2003 (captured in IMR 2002)
+    social_imr$IMR_lag1[i] = social_imr$IMR[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+    social_imr$IMR_Hispanic_lag1[i] = social_imr$IMR_Hispanic[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+    social_imr$IMR_White_lag1[i] = social_imr$IMR_White[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+    social_imr$IMR_Black_lag1[i] = social_imr$IMR_Black[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+    social_imr$IMR_Asian_lag1[i] = social_imr$IMR_Asian[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+    social_imr$IMR_20_lag1[i] = social_imr$IMR_20[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+    social_imr$IMR_20_29_lag1[i] = social_imr$IMR_20_29[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+    social_imr$IMR_30_39_lag1[i] = social_imr$IMR_30_39[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+    social_imr$IMR_40_lag1[i] = social_imr$IMR_40[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
   }
-  if (social_imr$Year[i]<2011) {
-    social_imr$IMR_lag2[i] = social_imr$IMR[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+2))]
+  if (social_imr$Year[i]<2014) {
+    #e.g. expenditures in year 2000 lag to IMR 2002-2004 (captured in IMR 2003)
+    social_imr$IMR_lag2[i] = social_imr$IMR[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+3))]
   }
-  if (social_imr$Year[i]<2010) {
-    social_imr$IMR_lag3[i] = social_imr$IMR[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+3))]
-  }
-  if (social_imr$Year[i]<2009) {
-    social_imr$IMR_lag4[i] = social_imr$IMR[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+4))]
-  }
-  if (social_imr$Year[i]<2008) {
-    social_imr$IMR_lag5[i] = social_imr$IMR[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+5))]
+  if (social_imr$Year[i]<2013) {
+    #e.g. expenditures in year 2000 lag to IMR 2003-2005 (captured in IMR 2004)
+    social_imr$IMR_lag3[i] = social_imr$IMR[(social_imr$State==social_imr$State[i]) & (social_imr$Year==(social_imr$Year[i]+4))]
   }
 }
 rm(i)
 
 #choose a covariance structure: autoregressive is best fit due to time aspect
-summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="REML")) #no correlation
-summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="REML", correlation=corSymm())) #unstructured
-summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="REML",correlation=corAR1())) #autoregressive
-summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="REML",correlation=corCompSymm())) #compound symmetry
+summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014)), method="REML")) #no correlation
+summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014)), method="REML", correlation=corSymm())) #unstructured
+summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014)), method="REML",correlation=corAR1())) #autoregressive
+summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014)), method="REML",correlation=corCompSymm())) #compound symmetry
 
 #overall IMR models
-summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-summary(lme(IMR_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-summary(lme(IMR_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-summary(lme(IMR_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
 
 #stratified IMR models, overall expenditure
-summary(lme(IMR_Hispanic_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_White_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_Black_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_Asian_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_20_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_20_29_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_30_39_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_40_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Hispanic_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_White_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Black_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Asian_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_20_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_20_29_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_30_39_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_40_lag1 ~ Time*Expenditure_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
 
 #stratified IMR models, education expenditure
-summary(lme(IMR_Hispanic_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_White_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_Black_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_Asian_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_20_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_20_29_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_30_39_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_40_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Hispanic_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_White_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Black_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Asian_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_20_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_20_29_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_30_39_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_40_lag1 ~ Time*Expenditure_edu_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
 
 #stratified IMR models, social expenditure
-summary(lme(IMR_Hispanic_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_White_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_Black_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_Asian_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_20_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_20_29_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_30_39_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_40_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Hispanic_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_White_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Black_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Asian_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_20_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_20_29_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_30_39_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_40_lag1 ~ Time*Expenditure_social_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
 
 #stratified IMR models, environment expenditure
-summary(lme(IMR_Hispanic_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_White_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_Black_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_Asian_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_20_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_20_29_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_30_39_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
-summary(lme(IMR_40_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Hispanic_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_White_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Black_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_Asian_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_20_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_20_29_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_30_39_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
+summary(lme(IMR_40_lag1 ~ Time*Expenditure_env_z, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
 
 #confounder assessment
-summary(lme(IMR_lag1 ~ as.factor(President), random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-summary(lme(IMR_lag1 ~ as.factor(Governor), random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & State!="DC")), method="ML",correlation=corAR1()))
-summary(lme(IMR_lag1 ~ as.factor(Legislature), random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & State!="DC")), method="ML",correlation=corAR1()))
-summary(lme(IMR_lag1 ~ Gini, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & State!="DC")), method="ML",correlation=corAR1()))
-summary(lme(IMR_lag1 ~ Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & State!="DC")), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ as.factor(President), random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ as.factor(Governor), random=~1|State, data=subset(social_imr,(Year<=2014 & State!="DC")), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ as.factor(Legislature), random=~1|State, data=subset(social_imr,(Year<=2014 & State!="DC")), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ Gini, random=~1|State, data=subset(social_imr,(Year<=2014 & State!="DC")), method="ML",correlation=corAR1()))
+summary(lme(IMR_lag1 ~ Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & State!="DC")), method="ML",correlation=corAR1()))
 
-summary(lme(Expenditure_z ~ as.factor(President), random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-summary(lme(Expenditure_z ~ as.factor(Governor), random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & State!="DC")), method="ML",correlation=corAR1()))
-summary(lme(Expenditure_z ~ as.factor(Legislature), random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & State!="DC")), method="ML",correlation=corAR1()))
-summary(lme(Expenditure_z ~ Gini, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & State!="DC")), method="ML",correlation=corAR1()))
-summary(lme(Expenditure_z ~ Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & State!="DC")), method="ML",correlation=corAR1()))
+summary(lme(Expenditure_z ~ as.factor(President), random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+summary(lme(Expenditure_z ~ as.factor(Governor), random=~1|State, data=subset(social_imr,(Year<=2014 & State!="DC")), method="ML",correlation=corAR1()))
+summary(lme(Expenditure_z ~ as.factor(Legislature), random=~1|State, data=subset(social_imr,(Year<=2014 & State!="DC")), method="ML",correlation=corAR1()))
+summary(lme(Expenditure_z ~ Gini, random=~1|State, data=subset(social_imr,(Year<=2014 & State!="DC")), method="ML",correlation=corAR1()))
+summary(lme(Expenditure_z ~ Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & State!="DC")), method="ML",correlation=corAR1()))
 
 #overall IMR fully adjusted models
-model1 = (lme(IMR_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model2 = (lme(IMR_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model3 = (lme(IMR_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model4 = (lme(IMR_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
+model1 = (lme(IMR_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model2 = (lme(IMR_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model3 = (lme(IMR_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model4 = (lme(IMR_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
 
 # #assess contributions of expenditure to explain variance in IMR
-# model_full = (lme(IMR_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-# model_full = (lme(IMR_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-# model_full = (lme(IMR_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-# model_full = (lme(IMR_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-# model_reduced = (lme(IMR_lag1 ~ Time + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
+# model_full = (lme(IMR_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+# model_full = (lme(IMR_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+# model_full = (lme(IMR_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+# model_full = (lme(IMR_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+# model_reduced = (lme(IMR_lag1 ~ Time + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
 # 
 # (r.squaredGLMM(model_full)[2]  - r.squaredGLMM(model_reduced)[2]) * 100
 
 #stratified IMR fully adjusted models, overall expenditure
-model5 = (lme(IMR_Hispanic_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
-model6 = (lme(IMR_White_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
-model7 = (lme(IMR_Black_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
-model7.5 = (lme(IMR_Asian_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
-model8 = (lme(IMR_20_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
-model9 = (lme(IMR_20_29_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
-model10 = (lme(IMR_30_39_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
-model11 = (lme(IMR_40_lag1 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
+model5 = (lme(IMR_Hispanic_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
+model6 = (lme(IMR_White_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
+model7 = (lme(IMR_Black_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
+model7.5 = (lme(IMR_Asian_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
+model8 = (lme(IMR_20_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
+model9 = (lme(IMR_20_29_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
+model10 = (lme(IMR_30_39_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
+model11 = (lme(IMR_40_lag1 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
 
 #stratified IMR fully adjusted models, education expenditure
-model12 = (lme(IMR_Hispanic_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
-model13 = (lme(IMR_White_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
-model14 = (lme(IMR_Black_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
-model14.5 = (lme(IMR_Asian_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
-model15 = (lme(IMR_20_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
-model16 = (lme(IMR_20_29_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
-model17 = (lme(IMR_30_39_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
-model18 = (lme(IMR_40_lag1 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
+model12 = (lme(IMR_Hispanic_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
+model13 = (lme(IMR_White_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
+model14 = (lme(IMR_Black_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
+model14.5 = (lme(IMR_Asian_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
+model15 = (lme(IMR_20_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
+model16 = (lme(IMR_20_29_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
+model17 = (lme(IMR_30_39_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
+model18 = (lme(IMR_40_lag1 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
 
 #stratified IMR fully adjusted models, social expenditure
-model19 = (lme(IMR_Hispanic_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
-model20 = (lme(IMR_White_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
-model21 = (lme(IMR_Black_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
-model21.5 = (lme(IMR_Asian_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
-model22 = (lme(IMR_20_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
-model23 = (lme(IMR_20_29_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
-model24 = (lme(IMR_30_39_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
-model25 = (lme(IMR_40_lag1 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
+model19 = (lme(IMR_Hispanic_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
+model20 = (lme(IMR_White_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
+model21 = (lme(IMR_Black_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
+model21.5 = (lme(IMR_Asian_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
+model22 = (lme(IMR_20_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
+model23 = (lme(IMR_20_29_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
+model24 = (lme(IMR_30_39_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
+model25 = (lme(IMR_40_lag1 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
 
 #stratified IMR fully adjusted models, environment expenditure
-model26 = (lme(IMR_Hispanic_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
-model27 = (lme(IMR_White_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
-model28 = (lme(IMR_Black_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
-model28.5 = (lme(IMR_Asian_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
-model29 = (lme(IMR_20_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
-model30 = (lme(IMR_20_29_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
-model31 = (lme(IMR_30_39_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
-model32 = (lme(IMR_40_lag1 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
+model26 = (lme(IMR_Hispanic_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Hispanic_lag1))), method="ML",correlation=corAR1()))
+model27 = (lme(IMR_White_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_White_lag1))), method="ML",correlation=corAR1()))
+model28 = (lme(IMR_Black_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Black_lag1))), method="ML",correlation=corAR1()))
+model28.5 = (lme(IMR_Asian_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_Asian_lag1))), method="ML",correlation=corAR1()))
+model29 = (lme(IMR_20_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_lag1))), method="ML",correlation=corAR1()))
+model30 = (lme(IMR_20_29_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_20_29_lag1))), method="ML",correlation=corAR1()))
+model31 = (lme(IMR_30_39_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_30_39_lag1))), method="ML",correlation=corAR1()))
+model32 = (lme(IMR_40_lag1 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014 & !is.na(IMR_40_lag1))), method="ML",correlation=corAR1()))
 
 #overall IMR fully adjusted models, expenditure decomposed
-model33 = (lme(IMR_lag1 ~ Time*Expenditure_edu_education_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model34 = (lme(IMR_lag1 ~ Time*Expenditure_edu_libraries_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model35 = (lme(IMR_lag1 ~ Time*Expenditure_social_health_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model36 = (lme(IMR_lag1 ~ Time*Expenditure_social_hospitals_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model37 = (lme(IMR_lag1 ~ Time*Expenditure_social_insurance_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model38 = (lme(IMR_lag1 ~ Time*Expenditure_social_veterans_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model39 = (lme(IMR_lag1 ~ Time*Expenditure_social_welfare_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model40 = (lme(IMR_lag1 ~ Time*Expenditure_env_housing_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model41 = (lme(IMR_lag1 ~ Time*Expenditure_env_parks_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model42 = (lme(IMR_lag1 ~ Time*Expenditure_env_resources_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model43 = (lme(IMR_lag1 ~ Time*Expenditure_env_sewerage_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
-model44 = (lme(IMR_lag1 ~ Time*Expenditure_env_waste_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2012)), method="ML",correlation=corAR1()))
+model33 = (lme(IMR_lag1 ~ Time*Expenditure_edu_education_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model34 = (lme(IMR_lag1 ~ Time*Expenditure_edu_libraries_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model35 = (lme(IMR_lag1 ~ Time*Expenditure_social_health_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model36 = (lme(IMR_lag1 ~ Time*Expenditure_social_hospitals_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model37 = (lme(IMR_lag1 ~ Time*Expenditure_social_insurance_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model38 = (lme(IMR_lag1 ~ Time*Expenditure_social_veterans_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model39 = (lme(IMR_lag1 ~ Time*Expenditure_social_welfare_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model40 = (lme(IMR_lag1 ~ Time*Expenditure_env_housing_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model41 = (lme(IMR_lag1 ~ Time*Expenditure_env_parks_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model42 = (lme(IMR_lag1 ~ Time*Expenditure_env_resources_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model43 = (lme(IMR_lag1 ~ Time*Expenditure_env_sewerage_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
+model44 = (lme(IMR_lag1 ~ Time*Expenditure_env_waste_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2014)), method="ML",correlation=corAR1()))
 
 
 # ### ANALYSIS: PREDICTED IMR ###
@@ -938,7 +1077,7 @@ model44 = (lme(IMR_lag1 ~ Time*Expenditure_env_waste_z + as.factor(President) + 
 # sd(subset(social_imr,(Year!=2001 & Year!=2003))$Expenditure)*3.5 + mean(subset(social_imr,(Year!=2001 & Year!=2003))$Expenditure)
 
 
-### ANALYSIS: FIGURE ###
+### ANALYSIS: MAIN FIGURE ###
 
 #results dataframe
 estimates_fixef = data.frame("Model"=NA,"Estimate"=NA,"Lower"=NA,"Upper"=NA, stringsAsFactors=F)
@@ -992,10 +1131,72 @@ forestplot(labeltext=estimates_fixef$Model[1:9],
            lower=cbind(as.numeric(estimates_fixef$Lower[1:9]), as.numeric(estimates_fixef$Lower[10:18]), as.numeric(estimates_fixef$Lower[19:27]), as.numeric(estimates_fixef$Lower[28:36])),
            upper=cbind(as.numeric(estimates_fixef$Upper[1:9]), as.numeric(estimates_fixef$Upper[10:18]), as.numeric(estimates_fixef$Upper[19:27]), as.numeric(estimates_fixef$Upper[28:36])),
            xlab="Change in the infant mortality rate (per 1000)\nfor each standard deviation increase in per-capita expenditure over time", 
-           clip=c(-.15,.05),
+           clip=c(-.1,.05),
            boxsize=0.15,
            fn.ci_norm=c(fpDrawNormalCI,fpDrawPointCI,fpDrawDiamondCI,fpDrawCircleCI), 
            legend=c("Total $", "Education $", "Social $", "Environment $"), 
+           txt_gp=fpTxtGp(ticks=gpar(cex=0.75),xlab=gpar(cex=1)),
+           hrzl_lines=list("1"=gpar(lty=2),"2"=gpar(lty=2),"6"=gpar(lty=2)))
+
+
+### ANALYSIS: POVERTY RESULTS ###
+
+#results dataframe
+estimates_fixef = data.frame("Model"=NA,"Estimate"=NA,"Lower"=NA,"Upper"=NA, stringsAsFactors=F)
+
+estimates_fixef = rbind(estimates_fixef, c("Overall", intervals(model1)$fixed["Poverty",2], intervals(model1)$fixed["Poverty",1], intervals(model1)$fixed["Poverty",3]))
+estimates_fixef = rbind(estimates_fixef, c("Hispanic", intervals(model5)$fixed["Poverty",2], intervals(model5)$fixed["Poverty",1], intervals(model5)$fixed["Poverty",3]))
+estimates_fixef = rbind(estimates_fixef, c("White", intervals(model6)$fixed["Poverty",2], intervals(model6)$fixed["Poverty",1], intervals(model6)$fixed["Poverty",3]))
+estimates_fixef = rbind(estimates_fixef, c("Black", intervals(model7)$fixed["Poverty",2], intervals(model7)$fixed["Poverty",1], intervals(model7)$fixed["Poverty",3]))
+estimates_fixef = rbind(estimates_fixef, c("Asian", intervals(model7.5)$fixed["Poverty",2], intervals(model7.5)$fixed["Poverty",1], intervals(model7.5)$fixed["Poverty",3]))
+estimates_fixef = rbind(estimates_fixef, c("<20 yrs", intervals(model8)$fixed["Poverty",2], intervals(model8)$fixed["Poverty",1], intervals(model8)$fixed["Poverty",3]))
+estimates_fixef = rbind(estimates_fixef, c("20-29 yrs", intervals(model9)$fixed["Poverty",2], intervals(model9)$fixed["Poverty",1], intervals(model9)$fixed["Poverty",3]))
+estimates_fixef = rbind(estimates_fixef, c("30-39 yrs", intervals(model10)$fixed["Poverty",2], intervals(model10)$fixed["Poverty",1], intervals(model10)$fixed["Poverty",3]))
+estimates_fixef = rbind(estimates_fixef, c(">39 yrs", intervals(model11)$fixed["Poverty",2], intervals(model11)$fixed["Poverty",1], intervals(model11)$fixed["Poverty",3]))
+
+# estimates_fixef = rbind(estimates_fixef, c("Overall", intervals(model2)$fixed["Poverty",2], intervals(model2)$fixed["Poverty",1], intervals(model2)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Hispanic", intervals(model12)$fixed["Poverty",2], intervals(model12)$fixed["Poverty",1], intervals(model12)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("White", intervals(model13)$fixed["Poverty",2], intervals(model13)$fixed["Poverty",1], intervals(model13)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Black", intervals(model14)$fixed["Poverty",2], intervals(model14)$fixed["Poverty",1], intervals(model14)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Asian", intervals(model14.5)$fixed["Poverty",2], intervals(model14.5)$fixed["Poverty",1], intervals(model14.5)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("<20 yrs", intervals(model15)$fixed["Poverty",2], intervals(model15)$fixed["Poverty",1], intervals(model15)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("20-29 yrs", intervals(model16)$fixed["Poverty",2], intervals(model16)$fixed["Poverty",1], intervals(model16)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("30-39 yrs", intervals(model17)$fixed["Poverty",2], intervals(model17)$fixed["Poverty",1], intervals(model17)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c(">39 yrs", intervals(model18)$fixed["Poverty",2], intervals(model18)$fixed["Poverty",1], intervals(model18)$fixed["Poverty",3]))
+# 
+# estimates_fixef = rbind(estimates_fixef, c("Overall", intervals(model3)$fixed["Poverty",2], intervals(model3)$fixed["Poverty",1], intervals(model3)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Hispanic", intervals(model19)$fixed["Poverty",2], intervals(model19)$fixed["Poverty",1], intervals(model19)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("White", intervals(model20)$fixed["Poverty",2], intervals(model20)$fixed["Poverty",1], intervals(model20)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Black", intervals(model21)$fixed["Poverty",2], intervals(model21)$fixed["Poverty",1], intervals(model21)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Asian", intervals(model21.5)$fixed["Poverty",2], intervals(model21.5)$fixed["Poverty",1], intervals(model21.5)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("<20 yrs", intervals(model22)$fixed["Poverty",2], intervals(model22)$fixed["Poverty",1], intervals(model22)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("20-29 yrs", intervals(model23)$fixed["Poverty",2], intervals(model23)$fixed["Poverty",1], intervals(model23)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("30-39 yrs", intervals(model24)$fixed["Poverty",2], intervals(model24)$fixed["Poverty",1], intervals(model24)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c(">39 yrs", intervals(model25)$fixed["Poverty",2], intervals(model25)$fixed["Poverty",1], intervals(model25)$fixed["Poverty",3]))
+# 
+# estimates_fixef = rbind(estimates_fixef, c("Overall", intervals(model4)$fixed["Poverty",2], intervals(model4)$fixed["Poverty",1], intervals(model4)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Hispanic", intervals(model26)$fixed["Poverty",2], intervals(model26)$fixed["Poverty",1], intervals(model26)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("White", intervals(model27)$fixed["Poverty",2], intervals(model27)$fixed["Poverty",1], intervals(model27)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Black", intervals(model28)$fixed["Poverty",2], intervals(model28)$fixed["Poverty",1], intervals(model28)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("Asian", intervals(model28.5)$fixed["Poverty",2], intervals(model28.5)$fixed["Poverty",1], intervals(model28.5)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("<20 yrs", intervals(model29)$fixed["Poverty",2], intervals(model29)$fixed["Poverty",1], intervals(model29)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("20-29 yrs", intervals(model30)$fixed["Poverty",2], intervals(model30)$fixed["Poverty",1], intervals(model30)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c("30-39 yrs", intervals(model31)$fixed["Poverty",2], intervals(model31)$fixed["Poverty",1], intervals(model31)$fixed["Poverty",3]))
+# estimates_fixef = rbind(estimates_fixef, c(">39 yrs", intervals(model32)$fixed["Poverty",2], intervals(model32)$fixed["Poverty",1], intervals(model32)$fixed["Poverty",3]))
+
+estimates_fixef = estimates_fixef[-1, ]
+
+#plot
+#vignette("forestplot")
+forestplot(labeltext=estimates_fixef$Model[1:9], 
+           mean=cbind(as.numeric(estimates_fixef$Estimate[1:9]), as.numeric(estimates_fixef$Estimate[10:18]), as.numeric(estimates_fixef$Estimate[19:27]), as.numeric(estimates_fixef$Estimate[28:36])),
+           lower=cbind(as.numeric(estimates_fixef$Lower[1:9]), as.numeric(estimates_fixef$Lower[10:18]), as.numeric(estimates_fixef$Lower[19:27]), as.numeric(estimates_fixef$Lower[28:36])),
+           upper=cbind(as.numeric(estimates_fixef$Upper[1:9]), as.numeric(estimates_fixef$Upper[10:18]), as.numeric(estimates_fixef$Upper[19:27]), as.numeric(estimates_fixef$Upper[28:36])),
+           xlab="Change in the infant mortality rate (per 1000)\nfor each percentage point increase in poverty rate", 
+           clip=c(-.1,.5),
+           boxsize=0.15,
+           fn.ci_norm=c(fpDrawNormalCI,fpDrawPointCI,fpDrawDiamondCI,fpDrawCircleCI), 
+           #legend=c("Total $", "Education $", "Social $", "Environment $"), 
            txt_gp=fpTxtGp(ticks=gpar(cex=0.75),xlab=gpar(cex=1)),
            hrzl_lines=list("1"=gpar(lty=2),"2"=gpar(lty=2),"6"=gpar(lty=2)))
 
@@ -1037,13 +1238,13 @@ forestplot(labeltext=estimates_fixef$Model,
            lower=as.numeric(estimates_fixef$Lower),
            upper=as.numeric(estimates_fixef$Upper),
            xlab="Change in the infant mortality rate (per 1000)\nfor each standard deviation increase in per-capita expenditure over time", 
-           clip=c(-.15,.05), 
+           clip=c(-.075,.025), 
            boxsize=0.25,
            #fn.ci_norm=c(fpDrawNormalCI,fpDrawPointCI,fpDrawDiamondCI,fpDrawCircleCI), 
            #legend=c("Total $", "Education $", "Social $", "Environment $"), 
            txt_gp=fpTxtGp(ticks=gpar(cex=0.75),xlab=gpar(cex=1)),
            hrzl_lines=list("5"=gpar(lty=2),"12"=gpar(lty=2)))
-           
+
 
 ### ANALYSIS: STATE COMPARISONS ###
 
@@ -1269,49 +1470,33 @@ forestplot(labeltext=state_comp$Geography,
 ### SENSITIVIY ANALYSIS: LAGS ###
 
 #overall IMR fully adjusted models
-model1_lag2 = (lme(IMR_lag2 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model1_lag3 = (lme(IMR_lag3 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model1_lag4 = (lme(IMR_lag4 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2009 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model1_lag5 = (lme(IMR_lag5 ~ Time*Expenditure_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2008 & Year!=2009 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
+model1_lag2 = (lme(IMR_lag2 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2013)), method="ML",correlation=corAR1()))
+model1_lag3 = (lme(IMR_lag3 ~ Time*Expenditure_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2012)), method="ML",correlation=corAR1()))
 
-model2_lag2 = (lme(IMR_lag2 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model2_lag3 = (lme(IMR_lag3 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model2_lag4 = (lme(IMR_lag4 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2009 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model2_lag5 = (lme(IMR_lag5 ~ Time*Expenditure_edu_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2008 & Year!=2009 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
+model2_lag2 = (lme(IMR_lag2 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2013)), method="ML",correlation=corAR1()))
+model2_lag3 = (lme(IMR_lag3 ~ Time*Expenditure_edu_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2012)), method="ML",correlation=corAR1()))
 
-model3_lag2 = (lme(IMR_lag2 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model3_lag3 = (lme(IMR_lag3 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model3_lag4 = (lme(IMR_lag4 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2009 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model3_lag5 = (lme(IMR_lag5 ~ Time*Expenditure_social_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2008 & Year!=2009 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
+model3_lag2 = (lme(IMR_lag2 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2013)), method="ML",correlation=corAR1()))
+model3_lag3 = (lme(IMR_lag3 ~ Time*Expenditure_social_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2012)), method="ML",correlation=corAR1()))
 
-model4_lag2 = (lme(IMR_lag2 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model4_lag3 = (lme(IMR_lag3 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model4_lag4 = (lme(IMR_lag4 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2009 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
-model4_lag5 = (lme(IMR_lag5 ~ Time*Expenditure_env_z + as.factor(President) + Poverty, random=~1|State, data=subset(social_imr,(Year!=2001 & Year!=2003 & Year!=2008 & Year!=2009 & Year!=2010 & Year!=2011 & Year!=2012)), method="ML",correlation=corAR1()))
+model4_lag2 = (lme(IMR_lag2 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2013)), method="ML",correlation=corAR1()))
+model4_lag3 = (lme(IMR_lag3 ~ Time*Expenditure_env_z + Poverty, random=~1|State, data=subset(social_imr,(Year<=2012)), method="ML",correlation=corAR1()))
 
 summary(model1)
 summary(model1_lag2)
 summary(model1_lag3)
-summary(model1_lag4)
-summary(model1_lag5)
 
 summary(model2)
 summary(model2_lag2)
 summary(model2_lag3)
-summary(model2_lag4)
-summary(model2_lag5)
 
 summary(model3)
 summary(model3_lag2)
 summary(model3_lag3)
-summary(model3_lag4)
-summary(model3_lag5)
 
 summary(model4)
 summary(model4_lag2)
 summary(model4_lag3)
-summary(model4_lag4)
-summary(model4_lag5)
 
 
 ### SENSITIVITY ANALYSIS: FIGURE ###
@@ -1319,54 +1504,111 @@ summary(model4_lag5)
 #results dataframe
 estimates_fixef = data.frame("Model"=NA,"Estimate"=NA,"Lower"=NA,"Upper"=NA, stringsAsFactors=F)
 
-estimates_fixef = rbind(estimates_fixef, c("One year lag", intervals(model1)$fixed["Time:Expenditure_z",2], intervals(model1)$fixed["Time:Expenditure_z",1], intervals(model1)$fixed["Time:Expenditure_z",3]))
+estimates_fixef = rbind(estimates_fixef, c("One year lag (ref)", intervals(model1)$fixed["Time:Expenditure_z",2], intervals(model1)$fixed["Time:Expenditure_z",1], intervals(model1)$fixed["Time:Expenditure_z",3]))
 estimates_fixef = rbind(estimates_fixef, c("Two year lag", intervals(model1_lag2)$fixed["Time:Expenditure_z",2], intervals(model1_lag2)$fixed["Time:Expenditure_z",1], intervals(model1_lag2)$fixed["Time:Expenditure_z",3]))
 estimates_fixef = rbind(estimates_fixef, c("Three year lag", intervals(model1_lag3)$fixed["Time:Expenditure_z",2], intervals(model1_lag3)$fixed["Time:Expenditure_z",1], intervals(model1_lag3)$fixed["Time:Expenditure_z",3]))
-estimates_fixef = rbind(estimates_fixef, c("Four year lag", intervals(model1_lag4)$fixed["Time:Expenditure_z",2], intervals(model1_lag4)$fixed["Time:Expenditure_z",1], intervals(model1_lag4)$fixed["Time:Expenditure_z",3]))
-estimates_fixef = rbind(estimates_fixef, c("Five year lag", intervals(model1_lag5)$fixed["Time:Expenditure_z",2], intervals(model1_lag5)$fixed["Time:Expenditure_z",1], intervals(model1_lag5)$fixed["Time:Expenditure_z",3]))
 
-estimates_fixef = rbind(estimates_fixef, c("One year lag", intervals(model2)$fixed["Time:Expenditure_edu_z",2], intervals(model2)$fixed["Time:Expenditure_edu_z",1], intervals(model2)$fixed["Time:Expenditure_edu_z",3]))
+estimates_fixef = rbind(estimates_fixef, c("One year lag (ref)", intervals(model2)$fixed["Time:Expenditure_edu_z",2], intervals(model2)$fixed["Time:Expenditure_edu_z",1], intervals(model2)$fixed["Time:Expenditure_edu_z",3]))
 estimates_fixef = rbind(estimates_fixef, c("Two year lag", intervals(model2_lag2)$fixed["Time:Expenditure_edu_z",2], intervals(model2_lag2)$fixed["Time:Expenditure_edu_z",1], intervals(model2_lag2)$fixed["Time:Expenditure_edu_z",3]))
 estimates_fixef = rbind(estimates_fixef, c("Three year lag", intervals(model2_lag3)$fixed["Time:Expenditure_edu_z",2], intervals(model2_lag3)$fixed["Time:Expenditure_edu_z",1], intervals(model2_lag3)$fixed["Time:Expenditure_edu_z",3]))
-estimates_fixef = rbind(estimates_fixef, c("Four year lag", intervals(model2_lag4)$fixed["Time:Expenditure_edu_z",2], intervals(model2_lag4)$fixed["Time:Expenditure_edu_z",1], intervals(model2_lag4)$fixed["Time:Expenditure_edu_z",3]))
-estimates_fixef = rbind(estimates_fixef, c("Five year lag", intervals(model2_lag5)$fixed["Time:Expenditure_edu_z",2], intervals(model2_lag5)$fixed["Time:Expenditure_edu_z",1], intervals(model2_lag5)$fixed["Time:Expenditure_edu_z",3]))
 
-estimates_fixef = rbind(estimates_fixef, c("One year lag", intervals(model3)$fixed["Time:Expenditure_social_z",2], intervals(model3)$fixed["Time:Expenditure_social_z",1], intervals(model3)$fixed["Time:Expenditure_social_z",3]))
+estimates_fixef = rbind(estimates_fixef, c("One year lag (ref)", intervals(model3)$fixed["Time:Expenditure_social_z",2], intervals(model3)$fixed["Time:Expenditure_social_z",1], intervals(model3)$fixed["Time:Expenditure_social_z",3]))
 estimates_fixef = rbind(estimates_fixef, c("Two year lag", intervals(model3_lag2)$fixed["Time:Expenditure_social_z",2], intervals(model3_lag2)$fixed["Time:Expenditure_social_z",1], intervals(model3_lag2)$fixed["Time:Expenditure_social_z",3]))
 estimates_fixef = rbind(estimates_fixef, c("Three year lag", intervals(model3_lag3)$fixed["Time:Expenditure_social_z",2], intervals(model3_lag3)$fixed["Time:Expenditure_social_z",1], intervals(model3_lag3)$fixed["Time:Expenditure_social_z",3]))
-estimates_fixef = rbind(estimates_fixef, c("Four year lag", intervals(model3_lag4)$fixed["Time:Expenditure_social_z",2], intervals(model3_lag4)$fixed["Time:Expenditure_social_z",1], intervals(model3_lag4)$fixed["Time:Expenditure_social_z",3]))
-estimates_fixef = rbind(estimates_fixef, c("Five year lag", intervals(model3_lag5)$fixed["Time:Expenditure_social_z",2], intervals(model3_lag5)$fixed["Time:Expenditure_social_z",1], intervals(model3_lag5)$fixed["Time:Expenditure_social_z",3]))
 
-estimates_fixef = rbind(estimates_fixef, c("One year lag", intervals(model4)$fixed["Time:Expenditure_env_z",2], intervals(model4)$fixed["Time:Expenditure_env_z",1], intervals(model4)$fixed["Time:Expenditure_env_z",3]))
+estimates_fixef = rbind(estimates_fixef, c("One year lag (ref)", intervals(model4)$fixed["Time:Expenditure_env_z",2], intervals(model4)$fixed["Time:Expenditure_env_z",1], intervals(model4)$fixed["Time:Expenditure_env_z",3]))
 estimates_fixef = rbind(estimates_fixef, c("Two year lag", intervals(model4_lag2)$fixed["Time:Expenditure_env_z",2], intervals(model4_lag2)$fixed["Time:Expenditure_env_z",1], intervals(model4_lag2)$fixed["Time:Expenditure_env_z",3]))
 estimates_fixef = rbind(estimates_fixef, c("Three year lag", intervals(model4_lag3)$fixed["Time:Expenditure_env_z",2], intervals(model4_lag3)$fixed["Time:Expenditure_env_z",1], intervals(model4_lag3)$fixed["Time:Expenditure_env_z",3]))
-estimates_fixef = rbind(estimates_fixef, c("Four year lag", intervals(model4_lag4)$fixed["Time:Expenditure_env_z",2], intervals(model4_lag4)$fixed["Time:Expenditure_env_z",1], intervals(model4_lag4)$fixed["Time:Expenditure_env_z",3]))
-estimates_fixef = rbind(estimates_fixef, c("Five year lag", intervals(model4_lag5)$fixed["Time:Expenditure_env_z",2], intervals(model4_lag5)$fixed["Time:Expenditure_env_z",1], intervals(model4_lag5)$fixed["Time:Expenditure_env_z",3]))
 
 estimates_fixef = estimates_fixef[-1, ]
 
 #plot
 #vignette("forestplot")
-forestplot(labeltext=estimates_fixef$Model[1:5], 
-           mean=cbind(as.numeric(estimates_fixef$Estimate[1:5]), as.numeric(estimates_fixef$Estimate[6:10]), as.numeric(estimates_fixef$Estimate[11:15]), as.numeric(estimates_fixef$Estimate[16:20])),
-           lower=cbind(as.numeric(estimates_fixef$Lower[1:5]), as.numeric(estimates_fixef$Lower[6:10]), as.numeric(estimates_fixef$Lower[11:15]), as.numeric(estimates_fixef$Lower[16:20])),
-           upper=cbind(as.numeric(estimates_fixef$Upper[1:5]), as.numeric(estimates_fixef$Upper[6:10]), as.numeric(estimates_fixef$Upper[11:15]), as.numeric(estimates_fixef$Upper[16:20])),
+forestplot(labeltext=estimates_fixef$Model[1:3], 
+           mean=cbind(as.numeric(estimates_fixef$Estimate[1:3]), as.numeric(estimates_fixef$Estimate[4:6]), as.numeric(estimates_fixef$Estimate[7:9]), as.numeric(estimates_fixef$Estimate[10:12])),
+           lower=cbind(as.numeric(estimates_fixef$Lower[1:3]), as.numeric(estimates_fixef$Lower[4:6]), as.numeric(estimates_fixef$Lower[7:9]), as.numeric(estimates_fixef$Lower[10:12])),
+           upper=cbind(as.numeric(estimates_fixef$Upper[1:3]), as.numeric(estimates_fixef$Upper[4:6]), as.numeric(estimates_fixef$Upper[7:9]), as.numeric(estimates_fixef$Upper[10:12])),
            xlab="Change in the infant mortality rate (per 1000)\nfor each standard deviation increase in per-capita expenditure over time", 
            boxsize=0.1,
            fn.ci_norm=c(fpDrawNormalCI,fpDrawPointCI,fpDrawDiamondCI,fpDrawCircleCI), 
            legend=c("Total $", "Education $", "Social $", "Environment $"), 
            txt_gp=fpTxtGp(ticks=gpar(cex=0.75),xlab=gpar(cex=1)),
-           hrzl_lines=list("1"=gpar(lty=2),"2"=gpar(lty=2),"3"=gpar(lty=2),"4"=gpar(lty=2),"5"=gpar(lty=2)))
+           hrzl_lines=list("1"=gpar(lty=2),"2"=gpar(lty=2),"3"=gpar(lty=2)))
 
 
-### EXPORT DATA for QGIS MAPS ###
+### MAPS for PUBLICATION ###
 
-qgis = data.frame("STUSPS"=unique(social_imr$State), "avgIMR"=NA, "avgExpenditure"=NA, stringsAsFactors=F)
+library("sp") #shapefile
+library("plotrix") #plotting functions
+
+#state cartographic boundaries: https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html
+us_carto = readOGR("cb_2018_us_state_20m/", "cb_2018_us_state_20m")
+
+#retain only 50 U.S. states
+us_carto = us_carto[us_carto$NAME %in% state.name, ]
+
+#set projected coordinate system for U.S.
+us_carto_proj = spTransform(us_carto,CRS("+init=epsg:2163"))
+
+#need to transform AK, HI to fit under U.S. for single map; see https://stackoverflow.com/questions/13757771/relocating-alaska-and-hawaii-on-thematic-map-of-the-usa-with-ggplot2
+fixup <- function(usa,alaskaFix,hawaiiFix){
+  
+  alaska=usa[usa$NAME=="Alaska",]
+  alaska = fix1(alaska,alaskaFix)
+  proj4string(alaska) <- proj4string(usa)
+  
+  hawaii = usa[usa$NAME=="Hawaii",]
+  hawaii = fix1(hawaii,hawaiiFix)
+  proj4string(hawaii) <- proj4string(usa)
+  
+  usa = usa[! usa$NAME %in% c("Alaska","Hawaii"),]
+  usa = rbind(usa,alaska,hawaii)
+  
+  return(usa)
+  
+}
+
+fix1 <- function(object,params){
+  r=params[1];scale=params[2];shift=params[3:4]
+  object = elide(object,rotate=r)
+  size = max(apply(bbox(object),1,diff))/scale
+  object = elide(object,scale=size)
+  object = elide(object,shift=shift)
+  object
+}
+
+us_map = fixup(us_carto_proj,c(-35,2,-2500000,-2500000),c(-35,1,5500000,-1600000))
+rm(fix1,fixup,us_carto,us_carto_proj)
+
+#create data for mapping
+qgis = data.frame("STUSPS"=us_map$NAME, "avgIMR"=NA, "avgExpenditure"=NA, stringsAsFactors=F)
 for (i in 1:nrow(qgis))
 {
-  qgis$avgIMR[i] = mean(social_imr$IMR[social_imr$State==qgis$STUSPS[i]], na.rm=T)
-  qgis$avgExpenditure[i] = mean(social_imr$Expenditure_z[social_imr$State==qgis$STUSPS[i]], na.rm=T)
+  
+  qgis$avgIMR[i] = mean(social_imr$IMR[social_imr$State==state.abb[match(qgis$STUSPS[i],state.name)]], na.rm=T)
+  qgis$avgExpenditure[i] = mean(social_imr$Expenditure_z[social_imr$State==state.abb[match(qgis$STUSPS[i],state.name)]], na.rm=T)
 }
 rm(i)
 
-write.csv(qgis, "Raw Data/qgis_export.csv", na="", row.names=F)
+#write.csv(qgis, "qgis_export_revised.csv", na="", row.names=F)
+
+#choropleth shading for IMR
+map_col = rev(grey(seq(0.45, 0.9, by=0.05)))
+choropleth_imr = as.numeric(cut(qgis$avgIMR, breaks=c(quantile(qgis$avgIMR, probs = seq(0, 1, by = 0.10))), include.lowest=TRUE))
+
+#draw choropleth map
+par(mar=rep(0.1,4))
+plot(us_map,col=map_col[choropleth_imr])
+
+#symbology for expenditure
+choropleth_exp = as.numeric(cut(qgis$avgExpenditure, breaks=c(quantile(qgis$avgExpenditure, probs = seq(0, 1, by = 0.10))), include.lowest=TRUE))
+
+#centroids of each state
+centroids=gCentroid(us_map, byid=T)
+
+#add symbology
+for (i in 1:length(centroids)) {
+  draw.circle(x=centroids[i]$x, y=centroids[i]$y, radius=10000*choropleth_exp[i], col=adjustcolor("#FFFFFF",0.2))
+}
+rm(i)
+
