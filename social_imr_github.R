@@ -1134,6 +1134,7 @@ forestplot(labeltext=estimates_fixef$Model[1:9],
            clip=c(-.1,.05),
            boxsize=0.15,
            fn.ci_norm=c(fpDrawNormalCI,fpDrawPointCI,fpDrawDiamondCI,fpDrawCircleCI), 
+           #col=fpColors(box=c("black","blue","red","green")), #for video abstract
            legend=c("Total $", "Education $", "Social $", "Environment $"), 
            txt_gp=fpTxtGp(ticks=gpar(cex=0.75),xlab=gpar(cex=1)),
            hrzl_lines=list("1"=gpar(lty=2),"2"=gpar(lty=2),"6"=gpar(lty=2)))
@@ -1538,8 +1539,12 @@ forestplot(labeltext=estimates_fixef$Model[1:3],
 
 ### MAPS for PUBLICATION ###
 
+library("rgdal") #readOGR
 library("sp") #shapefile
+library("maptools") #manipulation functions
 library("plotrix") #plotting functions
+library("rgeos") #gCentroid functions
+library("RColorBrewer") #color palette
 
 #state cartographic boundaries: https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html
 us_carto = readOGR("cb_2018_us_state_20m/", "cb_2018_us_state_20m")
@@ -1594,6 +1599,7 @@ rm(i)
 
 #choropleth shading for IMR
 map_col = rev(grey(seq(0.45, 0.9, by=0.05)))
+#map_col = c("#FFFFFF",brewer.pal(9, "Blues")) #for video abstract
 choropleth_imr = as.numeric(cut(qgis$avgIMR, breaks=c(quantile(qgis$avgIMR, probs = seq(0, 1, by = 0.10))), include.lowest=TRUE))
 
 #draw choropleth map
@@ -1611,4 +1617,3 @@ for (i in 1:length(centroids)) {
   draw.circle(x=centroids[i]$x, y=centroids[i]$y, radius=10000*choropleth_exp[i], col=adjustcolor("#FFFFFF",0.2))
 }
 rm(i)
-
